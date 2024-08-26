@@ -21,8 +21,22 @@ Route::middleware('auth')->group(function () {
     return view('welcome');
 });*/
 
-Route::get('/', [PagesController::class, 'getHome']);
+Route::get('/', [PagesController::class, 'getTop']);
+Route::get('/about', [PagesController::class, 'getabout']);
+Route::get('/contact', [PagesController::class, 'getcontact']);
 Route::get('/tokuteisyoutorihiki', [PagesController::class, 'gettokuteisyoutorihiki']);
 Route::get('/privacypolicy', [PagesController::class, 'getprivacypolicy']);
 Route::get('/riyoukiyaku', [PagesController::class, 'getriyoukiyaku']);
 require __DIR__.'/auth.php';
+
+
+// コンタクトフォームページ
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
+use App\Http\Controllers\ContactController;
+
+// コンタクトフォームのデータ送信を処理するルート
+Route::post('/contact', [ContactController::class, 'store']);

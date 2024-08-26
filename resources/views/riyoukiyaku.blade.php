@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,66 @@
     <style>
         /* 画面の両サイドに20%の余白を追加 */
         .content-container {
-            margin-left: 20%;
-            margin-right: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        body {
+            font-size: 2vw;
+            /* ビューポートの幅の2%に基づいたフォントサイズ */
+        }
+
+        h1 {
+            font-size: 4vw;
+            /* h1はより大きく設定 */
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 2vw;
+            /* 段落のフォントサイズ */
+            line-height: 1.6;
+            /* 行間を広めにして読みやすく */
+        }
+
+        /* 画面サイズが大きいときのフォントサイズ */
+        @media (min-width: 1024px) {
+            body {
+                font-size: 18px;
+                /* デスクトップでは通常サイズに戻す */
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        /* 画面サイズが小さいときのフォントサイズ */
+        @media (max-width: 600px) {
+            body {
+                font-size: 3.5vw;
+                /* 小さな画面ではフォントを少し大きめに */
+            }
+
+            h1 {
+                font-size: 6vw;
+            }
+
+            p {
+                font-size: 3.5vw;
+            }
         }
     </style>
 </head>
+
 <body class="antialiased">
     <div class="content-container">
         <h1>利用規約</h1>
-        
+
         <p>本利用規約（以下、「本規約」といいます。）は、OBFall株式会社（以下、「当社」といいます。）が提供する音楽サービスdigOn（以下、「本サービス」といいます。）の利用条件を定めるものです。アカウント登録をしたユーザーの皆さま（以下、「ユーザー」といいます。）には、本規約に従って、本サービスをご利用いただきます。本規約に同意しない場合には、本サービスをご利用いただくことはできません。</p>
 
         <h2>第1条（適用）</h2>
@@ -159,4 +211,5 @@
         <p>令和●年●月●日　制定</p>
     </div>
 </body>
+
 </html>

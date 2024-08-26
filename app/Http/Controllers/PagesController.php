@@ -7,8 +7,18 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     // Homeを表示
-    public function getHome(){
-      return view('home');
+    public function getTop(){
+      return view('top');
+    }
+
+    // aboutを表示
+    public function getabout(){
+      return view('about');
+    }
+
+    // contactを表示
+    public function getcontact(){
+      return view('contact');
     }
 
     // tokuteisyoutorihikiを表示

@@ -1,7 +1,64 @@
 @extends('layouts.privacy_policy')
 
 @section('content')
-<div class="container" style="margin-left: 20%; margin-right: 20%;">
+<style>
+    /* 画面の両サイドに20%の余白を追加 */
+    .content-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    body {
+        font-size: 2vw;
+        /* ビューポートの幅の2%に基づいたフォントサイズ */
+    }
+
+    h1 {
+        font-size: 4vw;
+        /* h1はより大きく設定 */
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 2vw;
+        /* 段落のフォントサイズ */
+        line-height: 1.6;
+        /* 行間を広めにして読みやすく */
+    }
+
+    /* 画面サイズが大きいときのフォントサイズ */
+    @media (min-width: 1024px) {
+        body {
+            font-size: 18px;
+            /* デスクトップでは通常サイズに戻す */
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    /* 画面サイズが小さいときのフォントサイズ */
+    @media (max-width: 600px) {
+        body {
+            font-size: 3.5vw;
+            /* 小さな画面ではフォントを少し大きめに */
+        }
+
+        h1 {
+            font-size: 6vw;
+        }
+
+        p {
+            font-size: 3.5vw;
+        }
+    }
+</style>
+<div class="content-container">
     <h1>プライバシーポリシー</h1>
 
     <h2>個人情報保護方針</h2>

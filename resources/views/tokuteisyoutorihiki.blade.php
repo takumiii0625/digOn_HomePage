@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,66 @@
     <style>
         /* 画面の両サイドに20%の余白を追加 */
         .content-container {
-            margin-left: 20%;
-            margin-right: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        body {
+            font-size: 2vw;
+            /* ビューポートの幅の2%に基づいたフォントサイズ */
+        }
+
+        h1 {
+            font-size: 4vw;
+            /* h1はより大きく設定 */
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 2vw;
+            /* 段落のフォントサイズ */
+            line-height: 1.6;
+            /* 行間を広めにして読みやすく */
+        }
+
+        /* 画面サイズが大きいときのフォントサイズ */
+        @media (min-width: 1024px) {
+            body {
+                font-size: 18px;
+                /* デスクトップでは通常サイズに戻す */
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        /* 画面サイズが小さいときのフォントサイズ */
+        @media (max-width: 600px) {
+            body {
+                font-size: 3.5vw;
+                /* 小さな画面ではフォントを少し大きめに */
+            }
+
+            h1 {
+                font-size: 6vw;
+            }
+
+            p {
+                font-size: 3.5vw;
+            }
         }
     </style>
 </head>
+
 <body class="antialiased">
     <div class="content-container">
         <h1>特定商取引法に基づく表示</h1>
-        
+
         <p>OBFall株式会社が提供する音楽アプリdigOn（以下、「本アプリ」といいます。）の有償サブスクリプションサービスに関する特定商取引法に基づく表示は以下のとおりです。</p>
 
         <p>販売価格</p>
@@ -56,4 +108,5 @@
         <p>令和●年●月●日　制定</p>
     </div>
 </body>
+
 </html>

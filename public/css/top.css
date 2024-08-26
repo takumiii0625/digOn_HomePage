@@ -1,0 +1,210 @@
+/* 一番上のやつ */
+.promo-section {
+    background-color: #1e90ff;
+    /* 青色の背景 */
+    color: #fff;
+    /* 文字を白色に設定 */
+    text-align: center;
+    /* テキストを中央揃え */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.promo-image {
+    max-width: 10%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.promo-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hashtag {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.store-buttons {
+    margin: 30px 0;
+}
+
+.store-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    /* ボタン背景色を白に設定 */
+    color: #1e90ff;
+    /* ボタンの文字色を青に設定 */
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.store-button:hover {
+    background-color: #d3d3d3;
+    /* ホバー時の背景色 */
+    color: #1e90ff;
+    /* ホバー時の文字色 */
+}
+
+.promo-subtext {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* 機能の概要のやつ */
+.features-section {
+    background-color: #1effec;
+    /* おしゃれな青色の背景 */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* 画面幅に応じて折り返し */
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: #fff;
+    /* 白色の背景 */
+    color: #000;
+    /* 文字を黒色に設定 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* やわらかな影を追加 */
+    text-align: center;
+    width: 300px;
+    /* 各ボックスの幅を固定 */
+}
+
+.feature-image {
+    width: 20%;
+    /* 画像をボックス内にフィットさせる */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* 料金のやつ */
+.promo-box {
+    background-color: #b3e5fc;
+    /* 薄い水色の背景色 */
+    color: #0b0b0b;
+    /* 文字を白に設定 */
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* やわらかな影を追加 */
+
+    margin: 20px auto;
+    /* 中央揃え */
+}
+
+.promo-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.promo-highlight {
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.promo-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.promo-price {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    /* 背景色に半透明の白を設定 */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* 一番下のやつ */
+.centered-content {
+    background-color: rgba(28, 214, 243, 0.7);
+    /* 透明度の高い水色 */
+    color: #fff;
+    /* テキストの色を白に設定 */
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+
+    /* コンテンツの最大幅を設定 */
+}
+
+.app-image {
+    max-width: 10%;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+c .cta-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cta-subtext {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    /* ボタン背景を黒に設定 */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+
+.cta-button:hover {
+    background-color: #333;
+    /* ホバー時のボタン背景色を少し明るく */
+}
+
+.cta-button .arrow {
+    color: #00bfff;
+    /* > の色を水色に設定 */
+    margin-left: 10px;
+    /* "今すぐ始める" と > の間にスペースを追加 */
+}
