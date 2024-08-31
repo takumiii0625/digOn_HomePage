@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="{{ asset('images/top_icon.png') }}" alt="Logo" class="logo">
+            <img src="{{ asset('images/sub_icon.png') }}" alt="Logo" class="logo">
             <h1 class="site-title">digOn</h1>
         </div>
 

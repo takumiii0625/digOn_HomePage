@@ -1,15 +1,14 @@
 /* 一番上のやつ */
 .promo-section {
-    background-color: #1e90ff;
-    /* 青色の背景 */
+    background: linear-gradient(135deg, #27a2ead4, #b3d2e5);
     color: #fff;
-    /* 文字を白色に設定 */
     text-align: center;
-    /* テキストを中央揃え */
     padding: 40px;
     border-radius: 10px;
     margin: 50px auto;
 }
+
+
 
 .promo-image {
     max-width: 10%;
@@ -65,7 +64,7 @@
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 /* 機能の概要のやつ */
 .features-section {
-    background-color: #1effec;
+    background: linear-gradient(135deg, #27a2ead4, #b3d2e5);
     /* おしゃれな青色の背景 */
     padding: 50px 20px;
     display: flex;
@@ -111,7 +110,7 @@
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 /* 料金のやつ */
 .promo-box {
-    background-color: #b3e5fc;
+    background: linear-gradient(135deg, #27a2ead4, #b3d2e5);
     /* 薄い水色の背景色 */
     color: #0b0b0b;
     /* 文字を白に設定 */
@@ -152,11 +151,68 @@
     display: inline-block;
 }
 
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* 料金表 */
+.membership-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.membership-table thead {
+    background-color: #f8f8f8;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.membership-table th,
+.membership-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.membership-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.membership-table tr.details td {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+}
+
+.membership-table tr.details td:nth-child(2),
+.membership-table tr.details td:nth-child(3) {
+    font-weight: normal;
+}
+
+.membership-table th {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+}
+
+.membership-table td {
+    background-color: #fff;
+}
+
+.membership-table td:nth-child(2) {
+    background-color: #e0f7fa;
+}
+
+.membership-table td:nth-child(3) {
+    background-color: #ffe0b2;
+}
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 /* 一番下のやつ */
 .centered-content {
-    background-color: rgba(28, 214, 243, 0.7);
+    background: linear-gradient(135deg, #27a2ead4, #b3d2e5);
     /* 透明度の高い水色 */
     color: #fff;
     /* テキストの色を白に設定 */
@@ -207,4 +263,92 @@ c .cta-text {
     /* > の色を水色に設定 */
     margin-left: 10px;
     /* "今すぐ始める" と > の間にスペースを追加 */
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* お問い合わせ */
+/* コンテナのスタイル */
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0faff;
+    /* 薄い水色の背景 */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 見出しのスタイル */
+.contact-form-container h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #007BFF;
+    /* 高級感のあるブルー */
+    margin-bottom: 30px;
+}
+
+/* フォームのスタイル */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* フォームグループのスタイル */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ラベルのスタイル */
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* テキスト入力、テキストエリアのスタイル */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #0056b3;
+    /* フォーカス時のブルー */
+    outline: none;
+}
+
+/* テキストエリアのスタイル */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* 送信ボタンのスタイル */
+.submit-button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    /* ホバー時の色 */
 }
