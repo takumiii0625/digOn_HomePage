@@ -40,7 +40,7 @@
         <nav>
             <ul>
 
-                <li><a href="{{ url('/tokuteisyoutorihiki') }}" target="_blank">特定商取引</a></li>
+                <li><a href="{{ url('/tokuteisyoutorihiki') }}" target="_blank">特定商取引法の表示</a></li>
                 <li><a href="{{ url('/privacypolicy') }}" target="_blank">プライバシーポリシー</a></li>
                 <li><a href="{{ url('/riyoukiyaku') }}" target="_blank">利用規約</a></li>
                 <li><a href="{{ url('/contact') }}">お問い合わせ</a></li>
