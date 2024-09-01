@@ -6,34 +6,39 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    // Homeを表示
-    public function getTop(){
-      return view('top');
-    }
+  // Homeを表示
+  public function getTop()
+  {
+    return view('top');
+  }
 
-    // aboutを表示
-    public function getabout(){
-      return view('about');
-    }
+  // aboutを表示
+  public function getabout()
+  {
+    return view('about');
+  }
 
-    // contactを表示
-    public function getcontact(){
-      return view('contact');
-    }
+  // contactを表示
+  public function getcontact()
+  {
+    return view('contact');
+  }
 
-    // tokuteisyoutorihikiを表示
-    public function gettokuteisyoutorihiki(){
-      return view('tokuteisyoutorihiki');
-    }
+  // tokuteisyoutorihikiを表示
+  public function gettokuteisyoutorihiki()
+  {
+    return view('tokuteisyoutorihiki');
+  }
 
-    // privacy policyを表示
-    public function getprivacypolicy(){
-      return view('privacy policy');
-    }
+  // privacy policyを表示
+  public function getprivacypolicy()
+  {
+    return view('privacy policy');
+  }
 
-       // riyoukiyakuを表示
-       public function getriyoukiyaku(){
-        return view('riyoukiyaku');
-      }
+  // riyoukiyakuを表示
+  public function getriyoukiyaku()
+  {
+    return view('user-agreement');
+  }
 }
-

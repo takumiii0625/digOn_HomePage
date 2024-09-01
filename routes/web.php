@@ -26,8 +26,8 @@ Route::get('/about', [PagesController::class, 'getabout']);
 Route::get('/contact', [PagesController::class, 'getcontact']);
 Route::get('/tokuteisyoutorihiki', [PagesController::class, 'gettokuteisyoutorihiki']);
 Route::get('/privacypolicy', [PagesController::class, 'getprivacypolicy']);
-Route::get('/riyoukiyaku', [PagesController::class, 'getriyoukiyaku']);
-require __DIR__.'/auth.php';
+Route::get('/user-agreement', [PagesController::class, 'getriyoukiyaku']);
+require __DIR__ . '/auth.php';
 
 
 // コンタクトフォームページ
