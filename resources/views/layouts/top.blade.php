@@ -8,6 +8,10 @@
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
     <title>digOn</title>
+    <!-- サイトアイコンの設定 -->
+    <link rel="icon" href="{{ asset('images/sub_icon.png') }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('images/sub_icon.png') }}">
+
 </head>
 
 <body>
