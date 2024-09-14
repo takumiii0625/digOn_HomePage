@@ -1,4 +1,9 @@
 * text=auto eol=lf
+# 画像ファイルをバイナリとして指定
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
 
 *.blade.php diff=html
 *.css diff=css
