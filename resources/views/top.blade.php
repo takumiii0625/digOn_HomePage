@@ -20,7 +20,7 @@
 
 <div class="features-section">
     <div class="feature-box">
-        <img src="{{ asset('images/search.jpg') }}" alt="Feature 1" class="feature-image">
+        <img src="{{ asset('images/like.jpg') }}" alt="Feature 1" class="feature-image">
         <h3 class="feature-title">アプリを起動したら、すぐに音楽が聴けます。</h3>
         <p class="feature-description">
             広告は一切ナシ。<br>
