@@ -8,6 +8,17 @@
     margin: 50px auto;
 }
 
+@media (max-width: 768px) {
+    .promo-section {
+        background: linear-gradient(135deg, #27a2ead4, #b3d2e5);
+        color: #fff;
+        text-align: center;
+        padding: 40px;
+        border-radius: 10px;
+        margin: 10px auto;
+    }
+}
+
 
 
 .promo-image {
@@ -16,19 +27,49 @@
     margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+    .promo-image {
+        max-width: 20%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
 .sub-title {
-    font-size: 24px;
+    font-size: 19px;
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    .sub-title {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+
 .promo-section h1 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .promo-section h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
 }
 
 .hashtag {
     font-size: 18px;
     margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .hashtag {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
 }
 
 .store-buttons {
@@ -37,7 +78,7 @@
 
 .store-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: #fff;
     /* ボタン背景色を白に設定 */
     color: #1e90ff;
@@ -48,6 +89,8 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+
 
 .store-button:hover {
     background-color: #d3d3d3;
@@ -85,7 +128,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* やわらかな影を追加 */
     text-align: center;
-    width: 300px;
+    width: 600px;
     /* 各ボックスの幅を固定 */
 }
 
@@ -102,9 +145,29 @@
     margin-bottom: 10px;
 }
 
+/* スマホ版での文字サイズを調整 */
+@media (max-width: 768px) {
+    .feature-title {
+        font-size: 19px;
+        /* スマホ版では文字を大きくする */
+        line-height: 1.6;
+        /* 行間を少し広げる */
+    }
+}
+
 .feature-description {
     font-size: 16px;
     line-height: 1.5;
+}
+
+/* スマホ版での文字サイズを調整 */
+@media (max-width: 768px) {
+    .feature-description {
+        font-size: 14px;
+        /* スマホ版では文字を大きくする */
+        line-height: 1.6;
+        /* 行間を少し広げる */
+    }
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -127,18 +190,42 @@
 .promo-title {
     font-size: 24px;
     margin-bottom: 10px;
-    font-weight: bold;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .promo-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
 }
 
 .promo-highlight {
     font-size: 36px;
-    margin: 20px 0;
+    margin: 2px 0;
     font-weight: bold;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .promo-highlight {
+        font-size: 20px;
+        margin: 2px 0;
+        font-weight: bold;
+    }
 }
 
 .promo-text {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #faf9f9;
+}
+
+@media (max-width: 768px) {
+    .promo-text {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }
 
 .promo-price {
@@ -160,6 +247,17 @@
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: #333;
+}
+
+@media (max-width: 768px) {
+    .membership-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-family: 'Arial', sans-serif;
+        font-size: 10px;
+        color: #333;
+    }
 }
 
 .membership-table thead {
@@ -352,3 +450,5 @@ c .cta-text {
     background-color: #0056b3;
     /* ホバー時の色 */
 }
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */

@@ -6,9 +6,9 @@
 
 @section('content')
 <div class="promo-section">
-    <img src="{{ asset('images/app_image.png') }}" alt="Promo Image" class="promo-image">
+    <img src="{{ asset('images/app_image.jpg') }}" alt="Promo Image" class="promo-image">
     <h1>音楽に、出会える。</h1>
-    <div lass="sub-title">「ディグる」ことで、好きな曲の、アーティストの、一番最初のファンになろう。</div>
+    <div class="sub-title">「ディグる」ことで、好きな曲の、アーティストの、一番最初のファンになろう。</div>
     <p class="hashtag">月額500円で全機能解放。無料でも十分に楽しめます。</p>
     <p class="hashtag">今なら1ヶ月無料体験。</p>
     <p class="promo-subtext">まずはアプリをインストール </p>
@@ -20,7 +20,7 @@
 
 <div class="features-section">
     <div class="feature-box">
-        <img src="{{ asset('images/download.png') }}" alt="Feature 1" class="feature-image">
+        <img src="{{ asset('images/search.jpg') }}" alt="Feature 1" class="feature-image">
         <h3 class="feature-title">アプリを起動したら、すぐに音楽が聴けます。</h3>
         <p class="feature-description">
             広告は一切ナシ。<br>
@@ -29,7 +29,7 @@
         </p>
     </div>
     <div class="feature-box">
-        <img src="{{ asset('images/download.png') }}" alt="Feature 2" class="feature-image">
+        <img src="{{ asset('images/subsc.jpg') }}" alt="Feature 2" class="feature-image">
         <h3 class="feature-title">無料でも、音楽に出会える。</h3>
         <p class="feature-description">
             サブスク会員にならずとも、音楽を聴くことができます。<br>
@@ -37,7 +37,7 @@
         </p>
     </div>
     <div class="feature-box">
-        <img src="{{ asset('images/download.png') }}" alt="Feature 3" class="feature-image">
+        <img src="{{ asset('images/download.jpg') }}" alt="Feature 3" class="feature-image">
         <h3 class="feature-title">データ量を気にせず、あなただけのプレイリストを。</h3>
         <p class="feature-description">気になった曲は、ダウンロードしてオフラインでの再生も可能です。</p>
     </div>
