@@ -102,7 +102,7 @@
     <p class="cta-text">まずは無料体験</p>
     <p class="cta-subtext">初めての登録なら１ヶ月無料！</p>
     <p class="cta-subtext">いつでも解約OK</p>
-    <a href="#" class="cta-button">今すぐ始める <span class="arrow">></span></a>
+    <a href="https://apps.apple.com/jp/app/digon/id6618156307" class="cta-button">今すぐ始める <span class="arrow">></span></a>
 
 </div>
 
