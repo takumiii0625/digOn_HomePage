@@ -13,8 +13,8 @@
     <p class="hashtag">今なら1ヶ月無料体験。</p>
     <p class="promo-subtext">まずはアプリをインストール </p>
     <div class="store-buttons">
-        <a href="#" class="store-button">App Store</a>
-        <a href="#" class="store-button">Google Play</a>
+        <a href="https://apps.apple.com/jp/app/digon/id6618156307" class="store-button">App Store</a>
+        <p class="store-button">Google Play<br>(近日公開)</p>
     </div>
 </div>
 
