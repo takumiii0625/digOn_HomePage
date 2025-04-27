@@ -14,7 +14,7 @@
     <p class="promo-subtext">まずはアプリをインストール </p>
     <div class="store-buttons">
         <a href="https://apps.apple.com/jp/app/digon/id6618156307" class="store-button">App Store</a>
-        <p class="store-button">Google Play<br>(近日公開)</p>
+        <a href=" https://play.google.com/store/apps/details?id=com.obfall.digOn" class="store-button">Google Play</a>
     </div>
 </div>
 
