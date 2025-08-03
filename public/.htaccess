@@ -19,3 +19,25 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# --- IPアクセス制限 ---
+<RequireAll>
+Require ip 27.0.0.0/8
+Require ip 36.0.0.0/8
+Require ip 49.96.0.0/11
+Require ip 101.0.0.0/8
+Require ip 110.0.0.0/8
+Require ip 111.0.0.0/8
+Require ip 114.0.0.0/8
+Require ip 118.0.0.0/8
+Require ip 119.0.0.0/8
+Require ip 121.0.0.0/8
+Require ip 122.0.0.0/8
+Require ip 126.0.0.0/8
+Require ip 175.0.0.0/8
+Require ip 180.0.0.0/8
+Require ip 210.0.0.0/8
+Require ip 211.0.0.0/8
+Require ip 219.0.0.0/8
+Require ip 220.0.0.0/8
+</RequireAll>

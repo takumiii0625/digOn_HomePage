@@ -14,14 +14,16 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required',
+            'regex:/^[\p{Hiragana}\p{Katakana}\p{Han}ー、。！？\sa-zA-Z0-9０-９ａ-ｚＡ-Ｚ]+$/u',
+
         ]);
 
         // モデルを使用してデータをデータベースに保存
-            $contact = new Contact();
-            $contact->name = $validated['name'];
-            $contact->email = $validated['email'];
-            $contact->message = $validated['message'];
-            $contact->save();
+        $contact = new Contact();
+        $contact->name = $validated['name'];
+        $contact->email = $validated['email'];
+        $contact->message = $validated['message'];
+        $contact->save();
 
         // 処理後、適切なリダイレクトやメッセージ表示
         return redirect('/')->with('success', 'お問い合わせありがとうございます！');
