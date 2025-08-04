@@ -14,7 +14,7 @@ class ContactController extends Controller
             'name' => [
                 'required',
                 'max:255',
-                'regex:/^[\p{Hiragana}\p{Katakana}\p{Han}ー、。！？\sa-zA-Z0-9０-９ａ-ｚＡ-Ｚ]+$/u'
+                'regex:/^[\p{Hiragana}\p{Katakana}\p{Han}ー]+$/u'
             ],
             'email' => 'required|email',
             'message' => 'required',
