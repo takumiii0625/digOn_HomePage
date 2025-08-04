@@ -11,12 +11,15 @@ class ContactController extends Controller
     {
         // バリデーションルールを適用
         $validated = $request->validate([
-            'name' => 'required|max:255',
+            'name' => [
+                'required',
+                'max:255',
+                'regex:/^[\p{Hiragana}\p{Katakana}\p{Han}ー、。！？\sa-zA-Z0-9０-９ａ-ｚＡ-Ｚ]+$/u'
+            ],
             'email' => 'required|email',
             'message' => 'required',
-            'regex:/^[\p{Hiragana}\p{Katakana}\p{Han}ー、。！？\sa-zA-Z0-9０-９ａ-ｚＡ-Ｚ]+$/u',
-
         ]);
+
 
         // モデルを使用してデータをデータベースに保存
         $contact = new Contact();
