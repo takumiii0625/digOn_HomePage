@@ -1,89 +1,152 @@
-/* ヘッダー */
+/* ========================================
+   digOn - Premium Music App
+   Header & Footer Styles
+   ======================================== */
+
+/* CSS Variables for consistency */
+:root {
+    --primary-dark: #0a0a0f;
+    --secondary-dark: #12121a;
+    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --accent-gold: #d4af37;
+    --accent-purple: #764ba2;
+    --accent-blue: #667eea;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding-top: 80px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   Header
+   ======================================== */
 header {
-    background-color: #000000;
-    /* 背景を黒に設定 */
-    padding: 10px 20px;
-    color: #fff;
-    /* テキストを白に設定 */
+    background: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0 40px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    /* ヘッダーを固定 */
     top: 0;
-    /* 画面上部に固定 */
     left: 0;
     width: 100%;
-    /* ヘッダーの幅を全体に広げる */
     z-index: 1000;
-    /* ヘッダーを他の要素の上に表示 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    /* ヘッダーに影を追加 */
-    box-sizing: border-box;
-    /* padding を含めた幅を計算 */
+    transition: all 0.3s var(--transition-smooth);
+}
 
+header.scrolled {
+    background: rgba(10, 10, 15, 0.95);
+    height: 70px;
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .logo {
-    width: 50px;
-    /* ロゴの幅を設定（必要に応じて調整） */
-    height: auto;
-    margin-right: 10px;
-    /* ロゴとテキストの間に余白を追加 */
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    transition: transform 0.3s var(--transition-smooth);
 }
 
-.site-title {
-    font-size: 24px;
-    margin: 0;
+.logo:hover {
+    transform: scale(1.05);
 }
 
+.logo:last-child {
+    width: auto;
+    height: 28px;
+    border-radius: 0;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
+    gap: 8px;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
 nav ul li a {
-    color: #fff;
-    /* リンクテキストを白に設定 */
+    color: var(--text-secondary);
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s var(--transition-smooth);
+    position: relative;
+    letter-spacing: 0.3px;
 }
 
-/* ヘッダーが固定されるため、コンテンツが隠れないようにする */
-body {
-    padding-top: 70px;
-    /* ヘッダーの高さに応じて余白を設定 */
+nav ul li a:hover {
+    color: var(--text-primary);
+    background: var(--glass-bg);
 }
 
-/* フッター＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾ */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 20px;
+    height: 2px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+nav ul li a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
 footer {
-    background-color: rgba(211, 211, 211, 0.8);
-    /* 背景を灰色で透明度を80%に設定 */
-
-    /* 背景を灰色に設定 */
-    padding: 20px;
+    background: var(--secondary-dark);
+    border-top: 1px solid var(--glass-border);
+    padding: 40px 20px;
     text-align: center;
+    margin-top: 80px;
 }
 
-@media (max-width: 768px) {
-    footer {
-        background-color: rgba(211, 211, 211, 0.8);
-        /* 背景を灰色で透明度を80%に設定 */
-
-        /* 背景を灰色に設定 */
-        padding: 10px;
-        text-align: center;
-    }
+footer::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+    margin: 0 auto 30px;
 }
 
 footer nav ul {
@@ -92,34 +155,117 @@ footer nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    /* リストアイテム間のスペースを調整 */
+    flex-wrap: wrap;
+    gap: 12px 32px;
 }
-
-
 
 footer nav ul li {
     display: inline;
 }
 
 footer nav ul li a {
-    color: #000;
-    /* リンクテキストを黒に設定 */
+    color: var(--text-muted);
     text-decoration: none;
-    font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    footer nav ul li a {
-        color: #000;
-        /* リンクテキストを黒に設定 */
-        text-decoration: none;
-        font-size: 7px;
-    }
+    font-size: 13px;
+    font-weight: 400;
+    transition: all 0.3s var(--transition-smooth);
+    letter-spacing: 0.3px;
 }
 
 footer nav ul li a:hover {
-    text-decoration: underline;
+    color: var(--text-primary);
 }
 
-/* ＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾＾ */
+footer nav ul li a::after {
+    display: none;
+}
+
+/* Copyright text if needed */
+.copyright {
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+        height: 70px;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo:last-child {
+        height: 22px;
+    }
+
+    nav ul {
+        gap: 4px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    footer {
+        padding: 30px 16px;
+        margin-top: 60px;
+    }
+
+    footer nav ul {
+        gap: 8px 20px;
+    }
+
+    footer nav ul li a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        gap: 8px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo:last-child {
+        height: 18px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeInDown 0.6s var(--transition-smooth);
+}
